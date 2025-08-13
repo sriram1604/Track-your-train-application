@@ -1,0 +1,53 @@
+/* Container starts fully visible */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Train icon styling */
+.train-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Each letter fades in */
+.letter {
+  opacity: 0;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6600; /* orange color */
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Fade in animation for each letter */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up and fade out entire intro container */
+@keyframes slideUpFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Start slide up fade after letters appear (around 6.5s delay) */
+.slide-up-animation {
+  animation: slideUpFadeOut 1.5s ease forwards;
+  animation-delay: 6s;
+}

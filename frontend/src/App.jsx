@@ -12,8 +12,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [showIntro, setShowIntro] = useState(true);
 
-  // This function is passed to the Intro component and is called
-  // when the animation finishes.
+  
   const handleIntroFinish = () => {
     setShowIntro(false);
   };
@@ -42,7 +41,7 @@ export default function App() {
   };
 
   const formatTime = (time) => {
-    return time; // optionally format
+    return time; 
   };
 
   const cardBg = darkMode ? "bg-gray-900" : "bg-white";

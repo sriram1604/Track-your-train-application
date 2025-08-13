@@ -1,1 +1,1 @@
-export const apiurl = "https://track-your-train.onrender.com/"
+export const apiurl = "https://track-your-train.onrender.com"
